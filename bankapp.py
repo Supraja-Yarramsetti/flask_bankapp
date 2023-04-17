@@ -1,7 +1,7 @@
 
 from flask import Flask, request,jsonify
 from pymongo import MongoClient
-from bank_methods import BankAccount
+
 
 class BankAccount:
 

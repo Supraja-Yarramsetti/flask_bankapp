@@ -25,6 +25,6 @@ ENV FLASK_APP=app.py
 ENV FLASK_ENV=production
 
 # Wait for the MongoDB service to be available
-CMD bash -c 'while ! nc -z mongo 27017; do sleep 1; done; flask run --host=0.0.0.0'
+#CMD bash -c 'while ! nc -z mongo 27017; do sleep 1; done; flask run --host=0.0.0.0'
 
-#CMD ["python","bankapp.py"]
+CMD ["python","bankapp.py"]
